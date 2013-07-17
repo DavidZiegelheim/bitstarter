@@ -2,15 +2,15 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-// app.get('/', function(request, response) {
-//  response.send('Hello World 2!');
-//});
+app.get('/', function(request, response) {
 
-var content;
-// First I want to read the file
-var fs = require("fs");
-var data = fs.readFileSync("index.html", "utf8");
-console.log(data);
+  var content;
+  var fs = require("fs");
+  var data = fs.readFileSync("./index.html", "utf8");
+
+  response.send(data);
+});
+
 
 
 
