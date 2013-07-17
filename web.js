@@ -9,7 +9,7 @@ var app = express.createServer(express.logger());
 var content;
 // First I want to read the file
 var fs = require("fs");
-var data = fs.readFileSync("foo.txt", "utf8");
+var data = fs.readFileSync("index.html", "utf8");
 console.log(data);
 
 
